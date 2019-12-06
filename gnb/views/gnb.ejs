@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>여기가 창 제목</title>
+</head>
+<body>
+    <form action="/" method="POST">
+        First name:<br>
+        <input type="text" name="title" >
+        <br>
+        Last name:<br>
+        <input type="text" name="body" value="123">
+        <br><br>
+        <button>제출</button>
+    </form> 
+    <ul>
+    <% for(var i=0;i < posts.length;i++) { %>
+        <a href="/<%= posts[i].id %>">
+            <li><%= posts[i].title %></li>
+        </a>
+        
+        
+    <% } %>
+    </ul>
+</body>
+</html>

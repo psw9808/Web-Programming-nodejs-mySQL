@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>업데이트 창</title>
+</head>
+<body>
+    <form action="/update/<%= post.id %>" method="POST">
+        <input name="title" value="<%= post.title %>"/>
+        <input name="body" value="<%= post.body %>"/>
+        <button>제출</button>
+    </form>
+</body>
+</html>
